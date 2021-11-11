@@ -12,6 +12,11 @@ const GlobalStyle = createGlobalStyle`
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Playfair Display', serif;
     }
+
+    body{
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(249,223,174,1) 100%);
+    }
 `;
 
 export default GlobalStyle;

@@ -15,12 +15,33 @@ export const StoreProvider = ({ children }) => {
 
   // TODO: Update the method below to return the latest featured article from the list of articles
   const getFeatured = () => {
-    return null;
-  };
+
+    // sort array of articles by publish date ( most recent to oldest) using sort method
+    const sortedArticles = articles.sort((a,b) => {
+
+      return new Date(b.fields.date) - new Date(a.fields.date);
+  
+    });
+
+    // filter the articles array and find all articles that are marked featured
+    const allFeaturedArticles = sortedArticles.filter( (article) => {
+
+      return article.fields.featured === true;
+
+    })
+
+    // get the article that is most recent and featured
+    setFeaturedArticle(allFeaturedArticles[0]);
+
+    };
+
+    useEffect(()=>{
+      getFeatured();
+    },[articles])
 
   return (
     <StoreContext.Provider
-      value={{ featuredArticle, getFeaturedArticle: getFeatured, articles }}
+      value={{ featuredArticle, getFeatured, articles}}
     >
       {children}
     </StoreContext.Provider>

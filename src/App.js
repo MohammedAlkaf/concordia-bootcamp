@@ -5,6 +5,14 @@ import Container from "./components/Container";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import RecentFeaturedArticle from "./components/Container/FeaturedArticle";
+
+import BlogTitle from "./components/Container/BlogTitle";
+
+import CatagoriesButtons from "./components/Container/Catagories";
+
+import ArticlesThumbnailsContainer from "./components/Container/ArticlesThumbnailsContainer";
+
 function App() {
   const store = useStore();
 
@@ -18,7 +26,15 @@ function App() {
 
         {/* TODO: Blog things goes here. Use the components folder! */}
         <Container>
-          <h1>Hello 🌎</h1>
+
+          <BlogTitle/>
+
+          <RecentFeaturedArticle store = {store}/>
+          
+          <CatagoriesButtons/>
+          
+          <ArticlesThumbnailsContainer store = {store}/>
+          
         </Container>
 
         <Footer />
