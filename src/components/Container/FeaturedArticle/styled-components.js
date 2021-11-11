@@ -20,6 +20,7 @@ export const ArticleImg = styled.img`
         width:100%;
         margin-bottom: 20px;
     }
+
 `;
 
 export const ArticleContent = styled.div`

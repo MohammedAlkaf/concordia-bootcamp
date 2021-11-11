@@ -9,12 +9,12 @@ import {
 
 const RecentFeaturedArticle = ({store})=>{
     
+    // get the featured article from store.js
     const { featuredArticle} = store;
-
-    console.log("inside featured Article: " , featuredArticle);
 
     return(
         <>
+        {/* only render the RecentFeaturedArticle component when featuredArticle is available */}
         { featuredArticle && 
             <Wrapper>
 

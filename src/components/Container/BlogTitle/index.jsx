@@ -1,3 +1,4 @@
+// A simple component to to show the Blog title
 import styled from "styled-components";
 
 const BlogTitle = () => {

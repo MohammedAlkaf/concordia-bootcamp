@@ -30,11 +30,14 @@ export const StoreProvider = ({ children }) => {
 
     })
 
-    // get the article that is most recent and featured
+    // get the one article that is most recent and featured
     setFeaturedArticle(allFeaturedArticles[0]);
 
     };
 
+    // call the getFeatured function toobtained the most featured article
+    // every time 'articles' value chanages, call the function to obtain updated value
+    // of 'featuredArticle'  
     useEffect(()=>{
       getFeatured();
     },[articles])

@@ -3,11 +3,13 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { StoreProvider } from "./contexts/Store";
 import reportWebVitals from "./reportWebVitals";
-
+import {BrowserRouter as Router} from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>
     <StoreProvider>
-      <App />
+      <Router>
+        <App />
+      </Router>
     </StoreProvider>
   </React.StrictMode>,
   document.getElementById("root")

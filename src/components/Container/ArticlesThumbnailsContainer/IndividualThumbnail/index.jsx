@@ -1,3 +1,6 @@
+// A simple component to create the thumbnail or article card
+// this component will called to map the articles array
+
 import {
     Wrapper,
     ArticleImg,
@@ -6,14 +9,14 @@ import {
     ArticleContainer
     } from './styled-component';
     
-const ArticleThumbnail = ({title,catagory,index}) => {
+const ArticleThumbnail = ({title,catagory}) => {
 
     return(
 
         <Wrapper>
 
             <ArticleImg 
-                src = {`https://source.unsplash.com/random/800x800/?img=${index}`}
+                src = {`https://picsum.photos/id/${Math.round(Math.random()*100)}/400`}
             />
 
             <ArticleContainer>

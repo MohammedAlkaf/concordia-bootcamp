@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(249,223,174,1) 100%);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(249,249,249,1) 10%, rgba(255,219,126,1) 34%);
     }
 `;
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
 
 export const Wrapper = styled.div`
     display: flex;
@@ -17,25 +18,23 @@ export const ButtonsContainer = styled.div`
     margin-bottom: 40px;
 `;
 
-export const CatagoryButton = styled.button`
+export const CatagoryNavLink= styled(NavLink)`
     padding: 10px 25px;
     margin: 10px;
     border: 3px solid #c4e6f1;
     background: #c4e6f1;
-    
-    /* reset buttom styles */
     color: inherit;
-    font: inherit;
+    text-decoration: none;
     cursor: pointer;
-    outline: inherit;
     border-radius: 50px;
     transition: background 0.4s ease-out;
 
-    &:hover{
+    
+    &.active{
         background: transparent;
     }
-
-    &.active{
+    
+    &:hover{
         background: transparent;
     }
 
