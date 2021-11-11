@@ -7,6 +7,7 @@ import RecentFeaturedArticle from "./components/Container/FeaturedArticle";
 import BlogTitle from "./components/Container/BlogTitle";
 import CatagoriesButtons from "./components/Container/Catagories";
 import ArticlesThumbnailsContainer from "./components/Container/ArticlesThumbnailsContainer";
+import BackgroundLayer from "./backgroundLayer";
 import {
   BrowserRouter as Router,
   Routes ,
@@ -22,6 +23,7 @@ function App() {
     <>
       <GlobalStyle />
       <main className="App">
+        <BackgroundLayer/>
         <Header />
 
         {/* TODO: Blog things goes here. Use the components folder! */}
