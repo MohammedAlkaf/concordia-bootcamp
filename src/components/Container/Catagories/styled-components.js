@@ -28,7 +28,7 @@ export const CatagoryNavLink= styled(NavLink)`
     cursor: pointer;
     border-radius: 50px;
     transition: background 0.4s ease-out;
-
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
     &.active{
         background: transparent;
